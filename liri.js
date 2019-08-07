@@ -13,23 +13,17 @@ let input = '';
 
 switch (command) {
     case "spotify-this-song":
-    song();
-
-    break;
-
+        song();
+        break;
     case "movie-this":
-    movie();
-
-    break;
-
+        movie();
+        break;
     case "concert-this":
-    concert();
-    break;
-
+        concert();
+        break;
     case "do-what-it-says":
-    random();
-    break;
-
+        random();
+        break;
     default:
     console.log("!-----NOT-RECOGNIZED-----!")
 }
@@ -98,8 +92,20 @@ function song() {
                return console.log(error);
             }
             console.log("=============== I'm doing what it says ===============")
-            console.log(response);
+            console.log(response.slice(0).join(","));
+            // switch (fileData) {
+            //     case "spoify-this-song":
+            //         song();
+            //         break;
+            //     case "movie-this":
+            //         movie();
+            //         break;
+            //     case "concert-this":
+            //         concert();
+            //         break;
+            //     default:
+            //         console.log("No Commands Recognized");
+            // };
             
-            
-        })
+        });
     }
