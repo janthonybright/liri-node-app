@@ -12,8 +12,9 @@ In this assignment I built a LIRI app for Boot Camp week 10. This app uses node 
     - "do-what-it-says"
 5. Lastly type in your content you want to review.
   *any of the follwing examples will do*
-  * - "movie-this Men In Black"*
-  * - "spotify-this-song Take On Me"*
+    - "movie-this Men In Black"
+    - "spotify-this-song Take On Me"
+    - "concert-this Phantogram"
   
 Also below is a video that has a demonstration of the app running and working. Enjoy!
 
