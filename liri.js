@@ -87,25 +87,29 @@ function song() {
     )};
     
     function random() {
-        fs.readFile("random.txt", "utf8", function(error, response) {
+        fs.readFile("random.txt", "utf8", function(error, data) {
             if (error){
                return console.log(error);
             }
-            console.log("=============== I'm doing what it says ===============")
-            console.log(response.slice(0).join(","));
-            // switch (fileData) {
-            //     case "spoify-this-song":
-            //         song();
-            //         break;
-            //     case "movie-this":
-            //         movie();
-            //         break;
-            //     case "concert-this":
-            //         concert();
-            //         break;
-            //     default:
-            //         console.log("No Commands Recognized");
-            // };
             
+            console.log("=============== I'm doing what it says ===============")
+            
+        let dataSplit = data.split(",");
+        let random = dataSplit[Math.floor(Math.random() * dataSplit.length)];
+        let content = random.split(" ");
+
+        switch (content[0]) {
+            case "concert-this":
+                concert(content.splice(1).join(" "));
+                break;
+            case "movie-this":
+                movie(content.splice(1));
+                break;
+            case "spotify-this-song":
+                song(content.splice(1).join(" "));
+                break;
+            default:
+                console.log("Command Not Recognized");
+            }            
         });
     }
