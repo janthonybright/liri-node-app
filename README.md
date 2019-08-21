@@ -1,4 +1,4 @@
-# liri-node-app
+# Liri-Node-App
 In this assignment I built a LIRI app for Boot Camp week 10. This app uses node and api's to pull content results, if the user has a need to search for content they have interest in.
 
 # Instruction Break Down
