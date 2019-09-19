@@ -6,10 +6,10 @@ In this assignment I built a LIRI app for Boot Camp week 10. This app uses node 
 2. Open your terminal and file the directory the app is located
 3. In your terminal command line type `node liri.js`
 4. After the first two commands in the process line type any of the following commands:
-    - "movie-this"
-    - "spotify-this-song"
-    - "concert-this"
-    - "do-what-it-says"
+    - `movie-this`
+    - `spotify-this-song`
+    - `concert-this`
+    - `do-what-it-says`
 5. Lastly type in your content you want to review.
 
 *any of the follwing examples will do*
