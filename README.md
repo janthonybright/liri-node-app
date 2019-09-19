@@ -1,7 +1,7 @@
 # Liri-Node-App
 In this assignment I built a LIRI app for Boot Camp week 10. This app uses node and api's to pull content results, if the user has a need to search for content they have interest in.
 
-# Instruction Break Down
+## Instruction Break Down
 1. Clone this repo down to your local system
 2. Open your terminal and file the directory the app is located
 3. In your terminal command line type "node liri.js"
